@@ -5,10 +5,13 @@ $('#sizePicker').submit(function (event) {
     let height = $('#inputHeight').val();
     let width = $('#inputWidth').val();
     makeGrid(height, width);
-    addColorEvent();
+    addColor();
 })
 
-// When size is submitted by the user, call makeGrid()
+/**
+ * A grid should appear when users
+ *  submit width and height
+ */
 function makeGrid(n, m) {
     // Clean the table before creating another one
     $('tr').remove();
@@ -22,15 +25,12 @@ function makeGrid(n, m) {
     }
 }
 
-function addColorEvent() {
-    // Select color input
+/**
+ * This function enables the color changing when 
+ * the user clicks on a grid's cell
+ */
+function addColor() {
     $('td').click(function() {
-        let color = $('#colorPicker').val();
-
-        if ($(this).attr('style')) {
-            $(this).removeAttr('style');
-        } else {
-            $(this).attr('style', 'background-color:' + color);
-        }
+        $(this).attr('style', 'background-color:' + $('#colorPicker').val());
     })
 }

@@ -2,15 +2,13 @@
 
 ## Table of Contents
 
+* [Introduction](#introduction)
 * [Instructions](#instructions)
-* [Contributing](#contributing)
+
+## Introduction
+
+This is a final project for the Javascript course by Udacity. This project is a Pixel Art Maker where you define the grid/canvas to work. Also, you can get the color and create any draw on the canvas. 
 
 ## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+To have access to the Pixel Art Maker, you can access `index.html`. You can create and design the grid by choosing the size of the canvas, picking the color and cliking in the cells.  
